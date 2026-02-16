@@ -63,10 +63,13 @@
             </label>
           </div>
 
-          <fieldset class="tag-set">
-            <legend>관심 태그</legend>
-            <div id="tag-pool" class="tag-pool"></div>
-          </fieldset>
+          <section id="content-stage" class="content-stage hidden">
+            <div class="content-stage-head">
+              <h3>현재 진행 콘텐츠 분석</h3>
+              <p id="selection-meta" class="hint">분석 후 원하는 콘텐츠를 선택해 주세요.</p>
+            </div>
+            <div id="content-pool" class="content-pool"></div>
+          </section>
 
           <div class="options">
             <label class="toggle">
@@ -88,7 +91,8 @@
           </div>
 
           <div class="cta-row">
-            <button class="btn primary" type="submit">여행 플랜 생성</button>
+            <button id="analyze-btn" class="btn ghost" type="button">콘텐츠 분석</button>
+            <button id="generate-btn" class="btn primary" type="submit" disabled>선택 콘텐츠로 플랜 생성</button>
             <button id="reset-btn" class="btn ghost" type="button">입력 초기화</button>
           </div>
           <p id="form-hint" class="hint"></p>

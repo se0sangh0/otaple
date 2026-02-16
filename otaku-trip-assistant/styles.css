@@ -213,6 +213,65 @@ h1 {
   color: #862f0e;
 }
 
+.content-stage {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.content-stage-head h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.content-stage-head p {
+  margin-top: 6px;
+}
+
+.content-pool {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.content-pill {
+  position: relative;
+}
+
+.content-pill input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.content-pill-box {
+  display: inline-grid;
+  gap: 2px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 8px 11px;
+  cursor: pointer;
+}
+
+.content-pill-box strong {
+  font-size: 0.84rem;
+  line-height: 1.2;
+}
+
+.content-pill-box small {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+.content-pill input:checked + .content-pill-box {
+  border-color: rgba(7, 136, 111, 0.58);
+  background: rgba(7, 136, 111, 0.12);
+}
+
 .options {
   margin-top: 12px;
   display: flex;
@@ -254,6 +313,12 @@ h1 {
 
 .btn:hover {
   transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .btn.primary {
